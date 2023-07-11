@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+:root {
+    --primary-color: #ff5a60;
+    --primary-color-hover: #c13a3f;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: "iran";
+    src: local("iran"), url("./assets/font/iran.woff") format("woff"),
+        url("./assets/font/iran.woff2") format("woff2");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+    font-family: "iran-bold";
+    src: local("iran-bold"), url("./assets/font/iran_bold.woff") format("woff"),
+        url("./assets/font/iran_bold.woff2") format("woff2");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.iran {
+    font-family: iran;
 }
 
-.App-link {
-  color: #61dafb;
+.iranBold {
+    font-family: iran-bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.body {
+    background-color: #f6f6f6;
+}
+
+.form-body__bg {
+    background-color: #ffffff;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.tour-card__border {
+    border-block-width: 1px;
+}
+
+.tour-card__tabs {
+    border: unset !important;
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: unset !important;
+    border: unset !important;
+
+    border: 1px solid #e6e6e6 !important;
+    margin-right: 10px;
+    color: #000000;
+    border-radius: 50px !important;
+}
+
+.nav-tabs .nav-link:hover {
+    border: 1px solid var(--primary-color) !important;
+    color: var(--primary-color);
+}
+
+.nav-tabs .nav-link.active {
+    color: #ffffff !important;
+    background-color: var(--primary-color) !important;
+}
+
+.custom-button {
+    color: #ffffff;
+    background-color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color) !important;
+}
+
+.custom-button:hover {
+    background-color: var(--primary-color-hover) !important;
+}
+
+.list-group-item.active {
+    background-color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color) !important;
+}
+
+.lux-bg {
+    background-image: url("./assets/lux.jpg");
+    height: 80vh;
+}
+
+.search-body__effect {
+    background: rgba(167, 167, 167, 0.48) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(4px) !important;
 }
